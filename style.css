@@ -37,6 +37,9 @@ header h1 {
   flex-direction: column;
   margin-bottom: 20px;
 }
+.location{
+  margin-top: 10px;
+}
 .section {
   margin-bottom: 20px;
 }
@@ -50,7 +53,7 @@ header h1 {
   justify-content: space-between;
 }
 .left-column {
-  max-width: 70%;
+  width: 70%;
 }
 .right-column{
   max-width: 25%;
@@ -83,4 +86,30 @@ header h1 {
 .achievements ul {
   list-style: disc;
   padding-left: 20px;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .header-right {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+  .skills, .experience {
+      min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-right img {
+      width: 80px;
+  }
 }
